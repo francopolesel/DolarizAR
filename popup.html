@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DolarizAR</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="dz-card">
+    <header class="dz-header">
+      <span class="dz-logo" aria-hidden="true">$</span>
+      <div>
+        <h1>DolarizAR</h1>
+        <p class="dz-sub">Convierte precios argentinos a dólares automáticamente.</p>
+      </div>
+    </header>
+
+    <section class="dz-rate" aria-live="polite">
+      <div class="dz-rate-row">
+        <span class="dz-label">Dólar oficial (venta)</span>
+        <strong id="dz-rate-value" class="dz-value">—</strong>
+      </div>
+      <div class="dz-rate-row">
+        <span class="dz-label">Actualizado</span>
+        <span id="dz-rate-date" class="dz-muted">—</span>
+      </div>
+      <div class="dz-rate-row">
+        <span class="dz-label">Última consulta</span>
+        <span id="dz-rate-ago" class="dz-muted">—</span>
+      </div>
+      <p id="dz-source-note" class="dz-note" hidden></p>
+      <p id="dz-error" class="dz-error" hidden></p>
+    </section>
+
+    <section class="dz-controls">
+      <label class="dz-toggle-row">
+        <span class="dz-toggle-label">Extensión activada</span>
+        <button id="dz-enabled" class="dz-toggle is-on" role="switch" aria-checked="true" aria-label="Activar o desactivar la extensión">
+          <span class="dz-knob"></span>
+        </button>
+      </label>
+
+      <p class="dz-section-title">Moneda</p>
+
+      <div class="dz-mode">
+        <strong id="dz-mode-label">Pesos → Dólares</strong>
+        <span id="dz-mode-example" class="dz-muted">$125.000 → US$81,17</span>
+        <span id="dz-mode-hint" class="dz-hint">Los precios en pesos se muestran en dólares.</span>
+      </div>
+
+      <button id="dz-switch" class="dz-button">Cambiar moneda</button>
+      <p class="dz-hint">La cotización se actualiza sola cada 15 minutos.</p>
+
+      <div class="dz-row">
+        <label class="dz-decimals" for="dz-decimals">Decimales</label>
+        <select id="dz-decimals" class="dz-select">
+          <option value="2">2 decimales</option>
+          <option value="0">Sin decimales</option>
+        </select>
+      </div>
+    </section>
+
+    <footer class="dz-footer">
+      <span>Cotización: DolarAPI</span>
+    </footer>
+  </main>
+  <script src="utils/storage.js"></script>
+  <script src="utils/currency.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

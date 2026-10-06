@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <title>DolarizAR — Página de prueba</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .price { font-size: 1.4rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Productos</h1>
+
+  <div class="card">
+    <span>Notebook</span>
+    <strong class="price">$1.250.000</strong>
+  </div>
+
+  <div class="card">
+    <span>Mouse</span>
+    <strong class="price">$25.999</strong>
+  </div>
+
+  <div class="card">
+    <span>Precio anterior</span>
+    <span>$1.400.000</span>
+  </div>
+
+  <div class="card">
+    Código postal: 1650
+  </div>
+
+  <div class="card">
+    Año: 2026
+  </div>
+
+  <div class="card">
+    12 cuotas de $125.000
+  </div>
+
+  <div class="card">
+    US$500
+  </div>
+
+  <div class="card">
+    €500
+  </div>
+
+  <div class="card">
+    <span>Oferta: $100.000 - $150.000</span>
+  </div>
+
+  <div class="card">
+    <span>Estilo Mercado Libre (símbolo y monto en spans anidados):</span>
+    <span class="andes-money-amount"><span class="andes-money-amount__currency-symbol">$</span><span class="andes-money-amount__fraction">12.500.000</span></span>
+  </div>
+
+  <div class="card">
+    <span>Publicación en dólares (función inversa USD → ARS):</span>
+    <span class="andes-money-amount"><span class="andes-money-amount__currency-symbol">U$S</span><span class="andes-money-amount__fraction">15.000</span></span>
+  </div>
+
+  <div class="card">
+    <span>Auto U$S 500 único dueño</span>
+  </div>
+
+  <div class="card" id="dynamic">
+    <span>Contenido dinámico (se agrega por JS en 2s):</span>
+  </div>
+
+  <script>
+    // Simula una SPA / contenido dinámico (MutationObserver debe captarlo).
+    setTimeout(function () {
+      var el = document.createElement('div');
+      el.className = 'card';
+      el.innerHTML = '<span>Teclado (cargado dinámicamente)</span> <strong class="price">$89.999</strong>';
+      document.getElementById('dynamic').appendChild(el);
+    }, 2000);
+  </script>
+</body>
+</html>

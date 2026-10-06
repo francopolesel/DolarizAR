@@ -1,0 +1,20 @@
+DolarizAR — instalación en 1 minuto (Brave o Chrome)
+=====================================================
+
+1. Descomprimí el archivo ZIP en una carpeta (ej: Descargas/dolarizar).
+   IMPORTANTE: no borres esa carpeta después, la extensión vive ahí.
+
+2. Abrí en el navegador:  brave://extensions/
+   (en Chrome: chrome://extensions/)
+
+3. Activá "Developer mode" / "Modo desarrollador" (arriba a la derecha).
+
+4. Apretá "Load unpacked" / "Cargar descomprimida" y elegí la carpeta
+   del paso 1 (la que tiene el archivo manifest.json adentro).
+
+5. Listo. Entrá a Mercado Libre y los precios aparecen convertidos.
+   Tocá el icono de DolarizAR para cambiar de modo (Pesos→Dólares o
+   Dólares→Pesos) o apagarla.
+
+Para actualizar a una versión nueva: repetí los pasos con el ZIP nuevo
+(o pedile al que te la pasó que te avise).

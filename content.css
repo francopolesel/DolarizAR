@@ -1,0 +1,10 @@
+/* DolarizAR — estilos namespaced (.dolarizar-*) para evitar colisiones. */
+
+.dolarizar-converted {
+  /* El valor convertido se ve como el texto original, con subrayado sutil
+     que indica que fue convertido (el original está en el tooltip). */
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  cursor: help;
+  unicode-bidi: isolate;
+}
