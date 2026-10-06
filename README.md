@@ -12,7 +12,10 @@ con el detalle de la cotización usada.
 ## Instalación (1 minuto)
 
 1. Descargá el ZIP desde [**Releases**](https://github.com/francopolesel/DolarizAR/releases) y descomprimilo (no borres la carpeta después).
-2. Abrí `brave://extensions/` y activá **Developer mode**.
+2. Abrí la página de extensiones de tu navegador y activá **Developer mode**:
+   - Brave → `brave://extensions/`
+   - Chrome → `chrome://extensions/`
+   - Edge → `edge://extensions/`
 3. **Load unpacked** → elegí la carpeta. Listo: entrá a Mercado Libre y funciona.
 
 ## Cómo usarla
