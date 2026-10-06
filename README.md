@@ -49,26 +49,14 @@ Se usa siempre el campo `venta`. La respuesta real (verificada el 2026-10-05) es
 }
 ```
 
-## Cómo instalar en Brave
+## Instalación (1 minuto)
 
-1. Abrir `brave://extensions/`
-2. Activar **Developer mode** (arriba a la derecha)
-3. Click en **Load unpacked**
-4. Seleccionar **esta carpeta** (`dolarizAR`)
-5. Navegar a una web argentina: los precios se convierten automáticamente
+1. Descargá el ZIP desde [**Releases**](https://github.com/francopolesel/DolarizAR/releases) y descomprimilo (no borres la carpeta después).
+2. Abrí `brave://extensions/` y activá **Developer mode**.
+3. **Load unpacked** → elegí la carpeta. Listo: entrá a Mercado Libre y funciona.
 
-## Cómo compartirla con amigos
-
-Ya tenés el ZIP listo en `dist/` (`dolarizar-<versión>.zip`, se regenera con
-`powershell -ExecutionPolicy Bypass -File scripts/pack.ps1`). Pasalo por
-Drive/WhatsApp: adentro va `INSTALAR-AMIGOS.txt` con los pasos (descomprimir
-→ `brave://extensions/` → Developer mode → Load unpacked). Cada versión
-nueva = repetir el proceso.
-
-Si tus amigos no son técnicos, lo cómodo es publicarla en el Chrome Web
-Store (USD 5 por única vez la cuenta de desarrollador; después es gratis y
-con auto-actualización). Brave instala del Web Store sin problema: les pasás
-un link y listo, sin modo desarrollador.
+Para compartirla pasá el ZIP + `INSTALAR-AMIGOS.txt` (va adentro, con estos
+mismos pasos). El ZIP se regenera con `scripts/pack.ps1`.
 
 ## Cómo funciona
 
